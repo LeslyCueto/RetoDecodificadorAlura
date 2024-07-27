@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="encabezado">
+    <img class="encabezado_logo" src="./img/aluraLogo.png" alt="">
+    <h1 class="encabezado_h1">Decodificador</h1>
+    </nav>
+    <section class="contenido">
+        <div class="contenido_form">
+            <div class="contenido_form--ctn">
+                <textarea class="contenido_form--txtarea" name="Ingrese el texto aqui" id="input-textarea">Ingrese el texto aqui</textarea>
+                <div class="contenido_form--aviso">
+                    <img class="contenido_form--icon" src="./img/bi_exclamation-circle-fill.png" alt="">
+                    <a class="contenido_form--a" href="">Solo letras minúsculas y sin acentos</a>
+                </div>
+                <div class="contenido_form--btns">
+                    <button class="contenido_btn--encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="contenido_btn--desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="contenido_form--salidatexto">
+                <img class="contenido_salidatexto--img" id="output-img" src="./img/Muñeco.png" alt="">
+                <h2 id="output-h2" class="contenido_salidatexto--h2">Ningún mensaje fue encontrado</h2>
+                <p id="output-p" class="contenido_salidatexto--p">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="copy-button" style="display: none;" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer_creador">Creado por: Lesly Sharom Cueto Tipte</p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
